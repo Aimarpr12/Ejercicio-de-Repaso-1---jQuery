@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apuntes Jquery UI</title>
+  <!--
+    Boostrap import
+    -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--
+    Jquery import
+    -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#TabsSection" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">Tabs</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="TabsSection">
+        <div class="card card-body">
+          <div id="tabs">
+            <ul>
+              <li><a href="#fragment-1"><span>One</span></a></li>
+              <li><a href="#fragment-2"><span>Two</span></a></li>
+              <li><a href="#fragment-3"><span>Three</span></a></li>
+            </ul>
+            <div id="fragment-1">
+              <p>First tab is active by default:</p>
+              <pre><code>$( "#tabs" ).tabs(); </code></pre>
+            </div>
+            <div id="fragment-2">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </div>
+            <div id="fragment-3">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+              laoreet dolore magna aliquam erat volutpat.
+            </div>
+          </div>
+          <div class="linkTabs">
+            <a href="https://api.jqueryui.com/tabs/#options" target="_blank">Tabs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#AccordionSection" role="button" aria-expanded="false"
+        aria-controls="multiCollapseExample1">accordion</a>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="AccordionSection">
+          <div class="card card-body">
+            <div id="accordion">
+              <h3>Section 1</h3>
+              <div>
+                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget.
+                  Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+                  condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros.
+                  Nam mi. Proin viverra leo ut odio.</p>
+              </div>
+              <h3>Section 2</h3>
+              <div>
+                <p>Sed non urna. Phasellus eu ligula. Vestibulum sit amet purus.
+                  Vivamus hendrerit, dolor aliquet laoreet, mauris turpis velit,
+                  faucibus interdum tellus libero ac justo.</p>
+              </div>
+              <h3>Section 3</h3>
+              <div>
+                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.
+                  Quisque lobortis.Phasellus pellentesque purus in massa.</p>
+                <ul>
+                  <li>List item one</li>
+                  <li>List item two</li>
+                  <li>List item three</li>
+                </ul>
+              </div>
+            </div>
+            <div class="linkTabs">
+              <a href="https://api.jqueryui.com/accordion/#options" target="_blank">accordion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#DatepickerSection" role="button" aria-expanded="false"
+        aria-controls="multiCollapseExample1">Datepicker</a>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="DatepickerSection">
+          <div class="card card-body">
+            <div id="datepicker"></div>
+            <div class="linkTabs">
+              <a href="https://api.jqueryui.com/datepicker/#options" target="_blank">datepicker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#DialogSection" role="button" aria-expanded="false"
+        aria-controls="multiCollapseExample1">dialog</a>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="DialogSection">
+          <div class="card card-body">
+
+            <button id="opener">open the dialog</button>
+            <div id="dialog" title="Dialog Title">I'm a dialog</div>
+            <div class="linkTabs">
+              <a href="https://api.jqueryui.com/dialog/#options" target="_blank">dialog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#buttonSection" role="button" aria-expanded="false"
+        aria-controls="multiCollapseExample1">button</a>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="buttonSection">
+          <div class="card card-body">
+            <div id="button">
+              Boton
+            </div>
+            <a href="https://api.jqueryui.com/button/#options" target="_blank">button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#tooltipSection" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">tooltip</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="tooltipSection">
+        <div class="card card-body">
+          <div id="tooltip">
+            <a href="#" title="Anchor description">Anchor text</a>
+            <input title="Input help">
+          </div>
+          <a href="https://api.jqueryui.com/tooltip/#options" target="_blank">tooltip</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#sliderSection" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">tooltip</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="sliderSection">
+        <div class="card card-body">
+
+          <div id="slider"></div>
+          <a href="https://api.jqueryui.com/slider/#options" target="_blank">slider</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#progressbarSection" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">progressbar</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="progressbarSection">
+        <div class="card card-body">
+
+          <div id="progressbar"></div>
+          <a href="https://api.jqueryui.com/sliprogressbarer/#options" target="_blank">progressbar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#spinnerSection" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">spinner</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="spinnerSection">
+        <div class="card card-body">
+
+          <input id="spinner">
+          <a href="https://api.jqueryui.com/spinner/#options" target="_blank">spinner</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#draggableSection" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">draggable</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="draggableSection">
+        <div class="card card-body">
+
+          <div id="draggable">Drag me</div>
+          <a href="https://api.jqueryui.com/draggable/#options" target="_blank">draggable</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#droppableSection" role="button" aria-expanded="false"
+      aria-controls="multiCollapseExample1">droppable</a>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="droppableSection">
+        <div class="card card-body">
+
+          <div id="droppable">Drop here</div>
+          <div id="draggable1">Drag me</div>
+          <a href="https://api.jqueryui.com/draggable/#options" target="_blank">droppable</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    $("#tabs").tabs({
+      active: 2
+    });
+
+    $("#accordion").accordion();
+
+
+    $("#datepicker").datepicker({
+      firstDay: 1,
+      beforeShowDay: $.datepicker.noWeekends
+    });
+
+    $("#dialog").dialog({ autoOpen: false });
+    $("#opener").click(function () {
+      $("#dialog").dialog("open");
+    })
+
+    $("#button").button().click(function () {
+      debugger;
+    });
+
+    $("#tooltip").tooltip();
+
+    $("#slider").slider();
+
+    $("#progressbar").progressbar({
+      value: 60
+    });
+
+
+    $("#spinner").spinner();
+
+    
+$( "#draggable" ).draggable();
+$( "#draggable1" ).draggable();
+$( "#droppable" ).droppable({
+  drop: function() {
+    alert( "dropped" );
+  }
+});
+
+  </script>
+
+  <style>
+    #draggable {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+
+  #draggable1 {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+  #droppable {
+    position: absolute;
+    left: 250px;
+    top: 0;
+    width: 125px;
+    height: 125px;
+    background: #999;
+    color: #fff;
+    padding: 10px;
+  }
+  </style>
+</body>
+
+</html>
